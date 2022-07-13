@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display&display=swap" rel="stylesheet">
+	<title>CSS List Styles</title>
+	<style>
+		html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+	
+		html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+	
+		*, *:before, *:after {box-sizing: inherit}
+	
+		.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+	
+		/* Oh hey there! With our newspaper almost ready to print, we just need to fix these lists up to that and we can send it off to the presses. */
+
+		/* Let's start with the <ol> inside of our <header> element. Give these list items a list style type of lower-roman and a list style position of inside. You can do this using one property or two.
+		
+		You may notice that changing the list style to inside spreads the list items out more. That's because we're bringing the dots (or in this case the Roman numerals) inside the margin rather that outside of it, so each list item individually is taking up more room. You may need to make some margin adjustments to make it perfect.*/
+
+		
+
+
+
+		/* Next, let's move over to the topArticles section. Let's change and style the numbers above each article. These numbers are the default list-style of the li's inside of an ordered list, but in order to style them the way we want to, we want to replace them with our own numbers. Write a CSS rule that gets rid of these default numbers, and then - directly in the html - add new numbers nested inside of the anchor tags, above the h5's. */
+
+		
+
+
+
+		/* Now let's spend a little time making it pretty! Make sure you have the ANSWER key open in the browser so you know what we're aiming for.
+		- target the tags you created in the previous problem. start off by giving them some background colour of rgba(255, 255, 0, 0.6) and a border-radius to make it a perfect circle.
+		- okay, not perfect, but we're getting there. Give the elements a height and a width of 60px so they are not elongated and instead are the same height and width
+		- we can vertically align the text by setting the line-height of the element to be equal to the height.
+		- and lastly, as you can see, setting a width has uncentered the number. use a display property on this same element that will allow the text to be centered while still accepting the height and width properties.
+	*/
+
+		
+
+
+
+		/* Great! Now if you look carefully (or use the inspector) you'll see that the two lists in the aside actually are not centered despite text-align: center; being applied to the whole section in the CSS above. This is because of the default styling of lists. Remove the property that causes this from all lists on the page. */
+
+		
+
+
+		
+		/* Looking good! Now let's move on to the blog posts section. We've gone ahead and styled the p elements inside of this section for you.*/
+
+		.blogPosts p {
+			display: inline-block;
+			background: rgba(255, 255, 0, 0.6);
+			width: 80%;
+			padding: 3px;
+			font-size: 1.7rem;
+			font-weight: bold;
+			font-style: italic;
+			border-radius: 10px;
+		}
+
+		/* The dot above our li's are there because the h5 element is taking up the full width of its parent element (as a element with a default of display: block should). We'll keep it up here, but let's make it look a little nicer. Change the default dot to an image from the url - https://hychalknotes.s3.amazonaws.com/yellow-bullet.png */
+
+		/* You can also center the dot by bringing the dot inside of the margin of the li's. Try it out and see if you can get it to center. */
+
+		/* And lastly, let's give the list items a margin of 10px on all sides. */
+
+		
+		
+
+
+
+		/* These are the styles that establish the look and layout of our page. They are not pertinent to this exercise, but feel free to take a look to see how we've styled our newspaper. SCROLL DOWN to get to the start of the exercise. */
+
+		body,
+		h2,
+		p {
+			margin: 0;
+			padding: 0;
+		}
+
+		html {
+			font-family: 'Oswald', sans-serif;
+			font-size: 62.5%;
+		}
+
+		body {
+			background: #f0f0f0;
+			font-size: 2.5rem;
+		}
+
+		header {
+			padding: 40px 40px 0 40px;
+			border-bottom: 2px solid black;
+		}
+
+		main {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: no-wrap;
+		}
+
+		.wrapper {
+			margin: 0 auto;
+			width: 90%;
+			max-width: 1345px;
+		}
+
+		nav ol {
+			display: flex;
+			justify-content: center;
+			margin: 20px 10px;
+		}
+
+
+		.hotTips ul {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+
+		.hotTips ul li {
+			width: calc(50% - 30px);
+			margin: 15px;
+		}
+
+
+		section {
+			width: calc(66% - 40px);
+		}
+
+		article {
+			margin-bottom: 60px;
+			letter-spacing: .1rem;
+			line-height: 1.6;
+		}
+
+		aside {
+			padding: 30px;
+			width: calc(33% - 40px);
+			max-width: 400px;
+			border-left: 2px solid #272727;
+		}
+
+		h1 {
+			margin: 15px 0;
+			font-size: 6rem;
+		}
+
+		h3 {
+			margin: 5px;
+			font-size: 3.6rem;
+		}
+
+		h4 {
+			display: inline-block;
+			position: relative;
+			margin: 30px;
+			font-size: 3rem;
+		}
+
+		h4:before {
+			content: "";
+			position: absolute;
+			left: -10%;
+			bottom: -20px;
+			background: rgba(255, 255, 0, 1);
+			height: 10px;
+			width: 120%;
+			border-radius: 10px;
+		}
+
+		h5 {
+			margin: 10px 0 30px;
+			font-size: 2rem;
+		}
+
+		a {
+			text-decoration: none;
+			color: #272727;
+		}
+
+		section,
+		aside {
+			margin: 20px auto;
+		}
+
+		.hotTips {
+			border-top: 2px solid #272727;
+		}
+
+		.hotTips h3 {
+			margin-top: 20px;
+		}
+
+		header,
+		h3,
+		h4,
+		.blogPosts h5 {
+			font-family: 'Playfair Display', serif;
+		}
+
+		header,
+		h4,
+		aside,
+		footer {
+			text-align: center;
+		}
+
+		.author {
+			margin: 10px 0 30px;
+			font-style: italic;
+		}
+
+		.author,
+		h5,
+		footer {
+			font-size: 2rem;
+		}
+
+		footer {
+			padding: 20px;
+		}
+
+		@media (max-width: 950px) {
+			body {
+				font-size: 2rem;
+			}
+
+			aside {
+				padding: 20px;
+			}
+
+			h4 {
+				font-size: 3rem;
+			}
+
+			.blogPosts p {
+				width: 100%;
+			}
+		}
+
+		@media (max-width: 700px) {
+			main {
+				flex-direction: column;
+			}
+
+			section,
+			aside {
+				width: 100%;
+			}
+
+			aside {
+				border-left: none;
+			}
+
+			.topArticles,
+			.blogPosts {
+				border-top: 2px solid #272727;
+			}
+
+			.hotTips {
+				margin-left: 10px 50px;
+			}
+
+			.hotTips ul {
+				flex-direction: column;
+				width: 100%;
+			}
+
+			.hotTips ul li {
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>The Spaghetti Times</h1>
+			<h2>Your Place for Pasta News</h2>
+			<p>since 2019</p>
+			<nav>
+				<ol>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Food</a></li>
+				</ol>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h3>Pasta Is Good - And That's A Good Thing</h3>
+				<p class="author">by Mad Dreamer</p>
+				<article>
+					<p>Pasta spaghettini sauce delicious sauce fettuccine ravioli angel hair, basil spaghetti fiorentine
+						spaghetti
+						sorprese.
+						Rotelle tortellini basil cheesy penne penne ditalini. Pasta rotelle tomatoes fiorentine
+						fiorentine basil
+						vermicelli
+						ditalini, rotelle ziti cavatelli rotelle ditalini vermicelli.</p>
+					<p>Sorprese ditalini basil pastina, spaghettini linguini penne tomatoes spaghetti al dente ditalini.
+						Fettuccine cheesy
+						spaghetti cavatelli macaroni ditalini penne ravioli ziti, pastina carbonara delicious basil. Al
+						dente ziti
+						cavatelli,
+						fiorentine sauce macaroni vermicelli spaghettini anelli tortellini macaroni pastina.</p>
+					<p>Ditalini penne tripoline tortellini carbonara delicious capellini cavatelli. Spaghettini ditalini
+						anelli
+						rotelle
+						tripoline tortellini, rotelle ravioli vermicelli angel hair tortellini. Carbonara tripoline
+						delicious, penne
+						pasta
+						ditalini ditalini anelli ziti linguini sauce spaghetti tomatoes. Ravioli penne spaghettini sauce
+						tomatoes
+						delicious
+						rotelle, sorprese ditalini capellini ziti al dente rotelle spaghetti. Linguini linguini tomatoes
+						ditalini
+						vermicelli,
+						lasagna ziti cheesy tomatoes macaroni basil spaghettini ditalini. Tripoline fettuccine sauce
+						tripoline
+						fiorentine
+						delicious anelli linguini, fiorentine spaghetti macaroni cavatelli ziti. Anelli ravioli
+						capellini lasagna,
+						tripoline
+						pastina ditalini pastina anelli lasagna linguini. Lasagna capellini delicious, rotelle angel
+						hair delicious
+						anelli
+						fettuccine tortellini vermicelli penne. Al dente lasagna ditalini cavatelli pasta ziti
+						spaghettini
+						fiorentine linguini.</p>
+					<p>Fettuccine basil pastina cavatelli cavatelli angel hair fettuccine basil pastina. Sorprese
+						spaghettini
+						pasta fettuccine
+						cavatelli anelli, pastina cheesy sorprese fiorentine sorprese. Cheesy capellini spaghettini
+						carbonara
+						spaghetti
+						fiorentine cheesy macaroni. Al dente sauce capellini fettuccine al dente, pasta basil ravioli
+						ravioli
+						rotelle. Ravioli
+						penne angel hair, ditalini spaghetti fettuccine spaghettini spaghettini carbonara linguini
+						ditalini ziti
+						rotelle.</p>
+					<p>Rotelle fettuccine ravioli tomatoes, tripoline tomatoes fiorentine fettuccine ziti cavatelli
+						spaghetti
+						carbonara ravioli
+						basil. Capellini basil linguini cavatelli vermicelli tripoline tortellini ziti. Ditalini
+						tortellini tomatoes
+						cavatelli
+						cheesy, tripoline cheesy anelli sorprese vermicelli angel hair. Pasta pastina ravioli tomatoes
+						capellini
+						ditalini ziti
+						basil. Spaghetti anelli cavatelli penne tripoline delicious carbonara. Lasagna carbonara
+						spaghetti ravioli
+						macaroni
+						sauce, tripoline carbonara vermicelli rotelle rotelle basil ziti. Cavatelli tripoline fettuccine
+						lasagna
+						ziti penne
+						spaghetti capellini, linguini sorprese cheesy cavatelli penne al dente. Angel hair capellini
+						pasta,
+						fiorentine delicious
+						linguini basil basil capellini linguini. Penne pasta spaghetti sauce cavatelli macaroni lasagna
+						lasagna.</p>
+				</article>
+				<div class="hotTips">
+					<h3>Hot Tips for Better Pasta</h3>
+					<p class="author">by Vizual Criminal</p>
+					<ul>
+						<li>
+							DON’T put oil in your water or on your pasta.
+						</li>
+						<li>
+							Salt your water like the sea.
+						</li>
+						<li>
+							Add some pasta water.
+						</li>
+						<li>
+							Bring water to a rapid boil before adding the pasta.
+						</li>
+						<li>
+							Drain don’t dry.
+						</li>
+						<li>
+							Add pasta to sauce — not the other way around.
+						</li>
+					</ul>
+				</div>
+			</section>
+			<aside>
+				<div class="topArticles">
+					<h4>Top Read Articles</h4>
+					<ol>
+						<li>
+							<a href="#">
+								<!-- new numbers go here! -->
+								<p>1</p>
+								<h5>Here's A Quick Way To Solve A Problem with Pasta</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>2</p>
+								<h5>Using 7 Pasta Strategies Like The Pros</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>3</p>
+								<h5>What Can You Do About Pasta Right Now</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>4</p>
+								<h5>Take The Stress Out Of Pasta</h5>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<p>5</p>
+								<h5>How To Win Buyers And Influence Sales with Pasta</h5>
+							</a>
+						</li>
+					</ol>
+				</div>
+				<div class="blogPosts">
+					<h4>Celebrate Our Spaghetti Blog!</h4>
+					<ul>
+						<div>
+							<li>
+								<a href="#">
+									<h5>Clear And Unbiased Facts About Spaghetti (Without All the Hype)</h5>
+								</a>
+								<a href="#">
+									<p>by Fearless Dominator</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h5>Marriage And Spaghetti Have More In Common Than You Think</h5>
+								</a>
+								<a href="#">
+									<p>by Respected Destroyer</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h5>9 Ridiculous Rules About Spaghetti</h5>
+								</a>
+								<a href="#">
+									by Unlucky Professional
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h5>Don't Fall For This Spaghetti Scam</h5>
+								</a>
+								<a href="#">
+									by Thunderous Criminal
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h5>Learn Exactly How We Made Spaghetti Last Month</h5>
+								</a>
+								<a href="#">
+									by Drunken Artist
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h5>What You Should Have Asked Your Teachers About Spaghetti</h5>
+								</a>
+								<a href="#">
+									by Quiet Lover
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h5>Spaghetti And The Chuck Norris Effect</h5>
+								</a>
+								<a href="#">
+									by Unlucky Genius
+								</a>
+							</li>
+						</div>
+					</ul>
+				</div>
+			</aside>
+		</main>
+		<footer>
+			<div class="wrapper">
+				<p>&copy The Spaghetti Times Company</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
